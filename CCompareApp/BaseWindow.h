@@ -1,19 +1,19 @@
 #include <afxwin.h>
-struct CBaseWindowModelView;
+struct CBaseWindowViewModel;
 
-struct BaseWindow : public ::CFrameWnd
+struct BaseWindow : public CFrameWnd
 {
-  explicit   BaseWindow(CBaseWindowModelView &ModelView);
+  explicit   BaseWindow(CBaseWindowViewModel &ModelView);
   virtual   ~BaseWindow();
 
 
 protected:
+
    //Support and inheritable functions
 protected:
   DECLARE_MESSAGE_MAP()
-
+  afx_msg void OnPaint();
 private:
   //helper function
-  CBaseWindowModelView  &ModelView;
-
+  CBaseWindowViewModel  &__ViewModel;
 };

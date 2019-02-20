@@ -1,5 +1,6 @@
 #ifndef BASE_WINDOW_VIEW_MODEL_H
 #define BASE_WINDOW_VIEW_MODEL_H
+#include <afx.h>
 #include "CViewModel.h"
 struct CResource;
 class  CBaseWindow;
@@ -12,6 +13,28 @@ class  CBaseWindow;
 ********************************************************************************************/
 struct CBaseWindowViewModel : public CViewModel
 {
+  //Get the  window model title
+  CBaseWindowViewModel(CResource & Resouce);
+
+  inline CString GetWindowTitle()const {
+    return __Title;
+  };
+
+  /***********************************************
+  * @brief
+  * Set the Window property and update the UI
+  * @param {CString const & } Title to update
+  *************************************************/
+  inline void SetTitle(CString const &  Title){
+    if (this->__Title != Title){
+      this->__Title = Title;
+      this->RaisePropertyChanged("Title");
+    }
+  }
+
+  virtual ~CBaseWindowViewModel();
+public:
+  //Static types
   static  CBaseWindowViewModel * GetInstance();
   /****************************************************************************************
   * @brief
@@ -19,10 +42,12 @@ struct CBaseWindowViewModel : public CViewModel
   *  @param {CBaseWindow& } Windo
   ******************************************************************************************/
   static   CBaseWindowViewModel * CreateInstance(CResource & Resource);
-  virtual ~CBaseWindowViewModel();
+
 protected:
   CBaseWindowViewModel();
-
+private:
+  //helper functions
+  CString __Title;
 private:
   //static members
   static CBaseWindowViewModel *_Instance;

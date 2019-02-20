@@ -80,12 +80,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseWindow.cpp" />
+    <ClCompile Include="CBaseWindowViewModel.cpp" />
     <ClCompile Include="CViewModel.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseWindow.h" />
-    <ClInclude Include="BaseWindowViewModel.h" />
+    <ClInclude Include="CBaseWindowViewModel.h" />
     <ClInclude Include="CompareApp.h" />
     <ClInclude Include="CResource.h" />
     <ClInclude Include="CViewModel.h" />
