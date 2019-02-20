@@ -1,0 +1,9 @@
+*.v12
+*.suo
+*.exe
+Debug/*
+Release/*
+*Debug/*
+*Release/*
+CCompareApp/Debug/*
+CCompareApp/Release/*
