@@ -23,6 +23,7 @@ __ViewModel(ViewModel)
  this->Create(nullptr, __ViewModel.GetTitle());
 }
 
+
 /**********************************************************
 *@brief
 *  The method is use to paint the dialog object.

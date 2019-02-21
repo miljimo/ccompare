@@ -36,9 +36,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CViewModel.cpp">
       <Filter>ViewModels\Sources</Filter>
     </ClCompile>
@@ -48,11 +45,14 @@
     <ClCompile Include="CBaseWindow.cpp">
       <Filter>Views\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="CCompareApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_Startup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CompareApp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CViewModel.h">
       <Filter>ViewModels\Headers</Filter>
     </ClInclude>
@@ -64,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="CBaseWindow.h">
       <Filter>Views\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CCompareApp.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

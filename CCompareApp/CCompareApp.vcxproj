@@ -83,12 +83,13 @@
     <ClCompile Include="CBaseWindow.cpp" />
     <ClCompile Include="CBaseWindowViewModel.cpp" />
     <ClCompile Include="CViewModel.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="CCompareApp.cpp" />
+    <ClCompile Include="_Startup.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CBaseWindow.h" />
     <ClInclude Include="CBaseWindowViewModel.h" />
-    <ClInclude Include="CompareApp.h" />
+    <ClInclude Include="CCompareApp.h" />
     <ClInclude Include="CResource.h" />
     <ClInclude Include="CViewModel.h" />
   </ItemGroup>
