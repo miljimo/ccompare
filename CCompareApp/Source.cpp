@@ -1,30 +1,8 @@
 #include <afxwin.h>
+#include "CBaseWindow.h"
+#include "CBaseWindowViewModel.h"
 
 
-struct BaseWindow : public CFrameWnd
-{
-  BaseWindow(const CString & title){
-    Create(nullptr, title);
-  }
-protected:
-  DECLARE_MESSAGE_MAP()
-  afx_msg void OnPaint();
-  
-};
-
-
-void BaseWindow::OnPaint()
-{
-  //Do nothing
-  CPaintDC dc(this);
-  CRect rect;
-  GetClientRect(&rect);
-  dc.DrawText(_T("Project Compare : PJT Files"), -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
-}
-
-BEGIN_MESSAGE_MAP(BaseWindow, CFrameWnd)
-  ON_WM_PAINT()
-END_MESSAGE_MAP()
 
 struct MyApp : public CWinApp
 {
@@ -35,7 +13,7 @@ struct MyApp : public CWinApp
   virtual BOOL InitInstance()
   {
     bool result = false;
-    this->m_pMainWnd = new BaseWindow("Project Compare: default");
+    this->m_pMainWnd = new CBaseWindow(CBaseWindowViewModel());
     
     if (this->m_pMainWnd != nullptr)
     {

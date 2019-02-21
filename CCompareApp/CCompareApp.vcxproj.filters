@@ -42,11 +42,11 @@
     <ClCompile Include="CViewModel.cpp">
       <Filter>ViewModels\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="BaseWindow.cpp">
-      <Filter>Views\Sources</Filter>
-    </ClCompile>
     <ClCompile Include="CBaseWindowViewModel.cpp">
       <Filter>ViewModels\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseWindow.cpp">
+      <Filter>Views\Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -56,14 +56,14 @@
     <ClInclude Include="CViewModel.h">
       <Filter>ViewModels\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="CResource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseWindow.h">
-      <Filter>Views\Headers</Filter>
-    </ClInclude>
     <ClInclude Include="CBaseWindowViewModel.h">
       <Filter>ViewModels\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CResource.h">
+      <Filter>ViewModels\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseWindow.h">
+      <Filter>Views\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
