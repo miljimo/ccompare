@@ -8,7 +8,7 @@
 *  The main viewmodel for the main BaseWindow of the application.
 *  The function is use to expose property that need to be show by the view.
 ********************************************************************************************/
-struct CBaseWindowViewModel : protected CViewModel
+struct CBaseWindowViewModel : protected CViewModel 
 {
   //Get the  window model title
   CBaseWindowViewModel();
@@ -30,7 +30,7 @@ struct CBaseWindowViewModel : protected CViewModel
 
   virtual ~CBaseWindowViewModel();
 public:
-  //Public function interface
+
 protected:
 
 private:

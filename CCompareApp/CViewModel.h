@@ -23,8 +23,8 @@ struct CViewModel : public CCmdTarget
   * @param{void*}
   * @param{AFX_CMDHANDLERINFO*}
   ******************************************************************/
-  //virtual BOOL OnCmdMsg(UINT nID, int nCode, void* pExtra,
-  //                     AFX_CMDHANDLERINFO* pHandlerInfo)override;
+  virtual BOOL OnCmdMsg(UINT nID, int nCode, void* pExtra,
+                AFX_CMDHANDLERINFO* pHandlerInfo)override;
 protected:
   CViewModel();
 

@@ -8,6 +8,9 @@ struct CBaseWindow : public CFrameWnd
 
 
 protected:
+  virtual BOOL OnCmdMsg(UINT nID, int nCode, void* pExtra,
+    AFX_CMDHANDLERINFO* pHandlerInfo)override;
+
   DECLARE_MESSAGE_MAP()
   //MFC Event functions
   afx_msg void OnPaint();

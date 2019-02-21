@@ -35,8 +35,17 @@ void CBaseWindow::OnPaint()
   CRect rect;
   GetClientRect(&rect);
   dc.DrawText(_T("Project Compare : PJT Files"), -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
+
+
 }
 
+BOOL CBaseWindow::OnCmdMsg(UINT nID, int nCode, void* pExtra,
+  AFX_CMDHANDLERINFO* pHandlerInfo)
+{
+  // Every command message must hit this call back before distributing it to the 
+  // other part of the system then the application.
+   return  CFrameWnd::OnCmdMsg(nID, nCode, pExtra, pHandlerInfo);
+}
 /************************************************************
 * @brief
 *   The constructor is use to clean up all resource that require cleanup.

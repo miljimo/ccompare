@@ -1,0 +1,13 @@
+﻿Build started 21/02/2019 13:17:19.
+     1>Project "D:\CCompareApp\CResDic\CResDic.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\CCompareApp\Debug\CResDic.dll" /INCREMENTAL /NOLOGO /DEF:".\CResDic.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\CCompareApp\Debug\CResDic.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\CCompareApp\Debug\CResDic.lib" /MACHINE:X86 /DLL Debug\CResDic.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+            Creating library D:\CCompareApp\Debug\CResDic.lib and object D:\CCompareApp\Debug\CResDic.exp
+         CResDic.vcxproj -> D:\CCompareApp\Debug\CResDic.dll
+     1>Done Building Project "D:\CCompareApp\CResDic\CResDic.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.11

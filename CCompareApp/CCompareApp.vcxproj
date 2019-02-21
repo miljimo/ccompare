@@ -90,7 +90,6 @@
     <ClInclude Include="CBaseWindow.h" />
     <ClInclude Include="CBaseWindowViewModel.h" />
     <ClInclude Include="CCompareApp.h" />
-    <ClInclude Include="CResource.h" />
     <ClInclude Include="CViewModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

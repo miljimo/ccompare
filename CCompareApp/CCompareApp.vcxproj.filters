@@ -59,9 +59,6 @@
     <ClInclude Include="CBaseWindowViewModel.h">
       <Filter>ViewModels\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="CResource.h">
-      <Filter>ViewModels\Headers</Filter>
-    </ClInclude>
     <ClInclude Include="CBaseWindow.h">
       <Filter>Views\Headers</Filter>
     </ClInclude>

@@ -39,6 +39,7 @@ BOOL CCompareApp::InitInstance()
   if (this->m_pMainWnd != nullptr)
   {
     this->m_pMainWnd->ShowWindow(TRUE);
+    
     result = true;
   }
   return result;
